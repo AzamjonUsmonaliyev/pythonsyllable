@@ -1,0 +1,1 @@
+$(".dro own-trigger").dropdown();
