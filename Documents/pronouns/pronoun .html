@@ -1,0 +1,1185 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+table, th, td {
+  border: 1px solid black;
+  border-collapse: collapse;
+  text-align: center;}
+h6 {
+  color: red;
+  display: block;
+  margin: 0px !important;
+}
+h5 {
+  color: red;
+  margin: 0px !important; 
+}
+</style>
+</head>
+<body>
+<h2 align="center" onclick="playAudio('pronoun')"><audio id="pronoun">
+  <source src="pronoun.ogg" type="audio/ogg">
+   <source src="pronoun.mp3" type="audio/mpeg">
+</audio>PRONOUN </h2>
+<h4 align="center" style="color:red;"> OLMOSH</h4>
+<table style="width:100%">
+  <tr>
+    <th colspan="2" onclick="playAudio('personal')"><audio id="personal">
+      <source src="personal.ogg" type="audio/ogg">
+       <source src="personal.mp3" type="audio/mpeg">
+       </audio>Personal<h5>Kishilik </h5>
+    <th colspan="2" onclick="playAudio('possessive')"><audio id="possessive">
+      <source src="possessive.ogg" type="audio/ogg">
+       <source src="possessive.mp3" type="audio/mpeg">
+       </audio>Possessive <h5>Egalik</h5></th>
+    <th rowspan="2" onclick="playAudio('reflexive emphatic')"><audio id="reflexive emphatic">
+      <source src="reflexive emphatic.ogg" type="audio/ogg">
+       <source src="reflexive emphatic.mp3" type="audio/mpeg">
+       </audio>Reflexive & Emphatic <h5>O'zlik</h5></th>
+    <th rowspan="2" onclick="playAudio('demonstrative')"><audio id="demonstrative">
+      <source src="demonstrative.ogg" type="audio/ogg">
+       <source src="demonstrative.mp3" type="audio/mpeg">
+       </audio>Demonstrative <h5>Ko'rsatish</h5></th>
+    <th rowspan="2" onclick="playAudio('reciprocal')"><audio id="reciprocal">
+      <source src="reciprocal.ogg" type="audio/ogg">
+       <source src="reciprocal.mp3" type="audio/mpeg">
+       </audio>Reciprocal <h5>Birgalik </h5></th>
+    <th rowspan="2" onclick="playAudio('interrogative')"><audio id="interrogative">
+      <source src="interrogative.ogg" type="audio/ogg">
+       <source src="interrogative.mp3" type="audio/mpeg">
+       </audio>Interrogative <h5>So‘roq </h5></th>
+    <th rowspan="2" onclick="playAudio('indefinite')"><audio id="indefinite">
+      <source src="indefinite.ogg" type="audio/ogg">
+       <source src="indefinite.mp3" type="audio/mpeg">
+       </audio>Indefinite <h5>Gumon</h5></th>
+    <th rowspan="2" onclick="playAudio('relative')"><audio id="relative">
+      <source src="relative.ogg" type="audio/ogg">
+       <source src="relative.mp3" type="audio/mpeg">
+       </audio>Relative <h5>Nisbiy </h5></th>
+    <th rowspan="2" onclick="playAudio('imrepsonal')"><audio id="imrepsonal">
+      <source src="imrepsonal.ogg" type="audio/ogg">
+       <source src="imrepsonal.mp3" type="audio/mpeg">
+       </audio>Imrepsonal <h5>Shaxssiz</h5></th>
+    <th rowspan="2" onclick="playAudio('distributive')"><audio id="distributive">
+      <source src="distributive.ogg" type="audio/ogg">
+       <source src="distributive.mp3" type="audio/mpeg">
+       </audio>Distributive <h5>Taqsimlash</h5></th> 
+    <th rowspan="2" onclick="playAudio('dummy')"><audio id="dummy">
+      <source src="dummy.ogg" type="audio/ogg">
+       <source src="dummy.mp3" type="audio/mpeg">
+       </audio>Dummy<h5>sun'iy, soxta</h5></th>
+  </tr>
+  <tr>
+      <th onclick="playAudio('subject')"><audio id="subject">
+        <source src="subject.ogg" type="audio/ogg">
+         <source src="subject.mp3" type="audio/mpeg">
+      </audio> Subject<br><h6>shaxs </h6></th> 
+      <th  onclick="playAudio('object')"><audio id="object">
+        <source src="object.ogg" type="audio/ogg">
+         <source src="object.mp3" type="audio/mpeg">
+      </audio>Object <br><h6>narsa</h6></th>
+      <th onclick="playAudio('adjectives')"><audio id="adjectives">
+        <source src="adjectives.ogg" type="audio/ogg">
+         <source src="adjectives.mp3" type="audio/mpeg">
+      </audio>Adjectives <h6>sifarlar</h6></th>
+      <th onclick="playAudio('pronouns')"><audio id="pronouns">
+        <source src="pronouns.ogg" type="audio/ogg">
+         <source src="pronouns.mp3" type="audio/mpeg">
+      </audio> Pronouns</th>
+  </tr>
+  <tr>
+    <td onclick="playAudio('I')"><audio id="I">
+      <source src="I.ogg" type="audio/ogg">
+       <source src="I.mp3" type="audio/mpeg">
+    </audio>I <h6>Men</h6></td>
+    <td onclick="playAudio('me')" >
+      <audio id="me">
+        <source src="me.ogg" type="audio/ogg">
+         <source src="me.mp3" type="audio/mpeg">
+      </audio> me <h6>Meni/Menga</h6>
+      </td>
+    <td onclick="playAudio('my')">
+      <audio id="my">
+      <source src="my.ogg" type="audio/ogg">
+       <source src="my.mp3" type="audio/mpeg">
+    </audio> my <h6>Mening</h6></td>
+    <td onclick="playAudio('mine')"><audio id="mine">
+      <source src="mine.ogg" type="audio/ogg">
+       <source src="mine.mp3" type="audio/mpeg">
+    </audio>mine <h6>Meniki</h6><h6/td>
+    <td onclick="playAudio('myself')"><audio id="myself">
+      <source src="myself.ogg" type="audio/ogg">
+       <source src="myself.mp3" type="audio/mpeg">
+    </audio>myself <h6>O'zim</h6></td>
+    <td onclick="playAudio('this')"><audio id="this">
+      <source src="this.ogg" type="audio/ogg">
+       <source src="this.mp3" type="audio/mpeg">
+    </audio>This (singlur)<h6>bu/shu</h6></td>
+    <td onclick="playAudio('each other')"><audio id="each other">
+      <source src="each other.ogg" type="audio/ogg">
+       <source src="each other.mp3" type="audio/mpeg">
+    </audio> each other (2 people)<h6>bir-biri</h6></td>
+    <td onclick="playAudio('who')"><audio id="who">
+      <source src="who.ogg" type="audio/ogg">
+       <source src="who.mp3" type="audio/mpeg">
+    </audio>Who <h6>kim</h6></td>
+    <td onclick="playAudio('some')"><audio id="some">
+      <source src="some.ogg" type="audio/ogg">
+       <source src="some.mp3" type="audio/mpeg">
+    </audio>some <h6>biroz/bir qancha/hech qanday</h6></td>
+    <td onclick="playAudio('who')"><audio id="who">
+      <source src="who.ogg" type="audio/ogg">
+       <source src="who.mp3" type="audio/mpeg">
+    </audio>Who <h6>kim</h6></td>
+    <td onclick="playAudio('one')"><audio id="one">
+      <source src="one.ogg" type="audio/ogg">
+       <source src="one.mp3" type="audio/mpeg">
+    </audio> one <h6>bitta</h6></td>
+    <td onclick="playAudio('each')"><audio id="each">
+      <source src="each.ogg" type="audio/ogg">
+       <source src="each.mp3" type="audio/mpeg">
+    </audio>each <h6>har biri</h6></td>
+    <td onclick="playAudio('there')"><audio id="there">
+      <source src="there.ogg" type="audio/ogg">
+       <source src="there.mp3" type="audio/mpeg">
+    </audio>there <h6> u yerda</h6></td>
+  </tr>
+  <tr>
+    <td onclick="playAudio('you')"><audio id="you">
+      <source src="you.ogg" type="audio/ogg">
+       <source src="you.mp3" type="audio/mpeg">
+    </audio>You <h6>Sen/siz</h6></td>
+    <td onclick="playAudio('you')"><audio id="you">
+      <source src="you.ogg" type="audio/ogg">
+       <source src="you.mp3" type="audio/mpeg">
+    </audio>you <h6>seni/senga</h6></td>
+    <td onclick="playAudio('your')"><audio id="your">
+      <source src="your.ogg" type="audio/ogg">
+       <source src="your.mp3" type="audio/mpeg">
+    </audio>Your <h6>sening</h6></td>
+    <td  onclick="playAudio('yours')"><audio id="yours">
+      <source src="yours.ogg" type="audio/ogg">
+       <source src="yours.mp3" type="audio/mpeg">
+    </audio>Yours <h6>seniki</h6></td>
+    <td onclick="playAudio('yourself')"><audio id="yourself">
+      <source src="yourself.ogg" type="audio/ogg">
+       <source src="yourself.mp3" type="audio/mpeg">
+    </audio>yourself <h6>o'zing</h6></td>
+    <td onclick="playAudio('that')"><audio id="that">
+      <source src="that.ogg" type="audio/ogg">
+       <source src="that.mp3" type="audio/mpeg">
+    </audio>That (singlur)<h6>u/o'sha</h6></td>
+    <td onclick="playAudio('one another')"><audio id="one another">
+      <source src="one another.ogg" type="audio/ogg">
+       <source src="one another.mp3" type="audio/mpeg">
+    </audio>one another(3 or more people) <h6>bir-biri</h6></td>
+    <td onclick="playAudio('whom')"><audio id="whom">
+      <source src="whom.ogg" type="audio/ogg">
+       <source src="whom.mp3" type="audio/mpeg">
+    </audio>whom <h6>kimni/kimga</h6></td>
+    <td onclick="playAudio('any')"><audio id="any">
+      <source src="any.ogg" type="audio/ogg">
+       <source src="any.mp3" type="audio/mpeg">
+    </audio>any <h6>biroz/bir qancha/hech qanday</h6></td>
+    <td onclick="playAudio('which')"><audio id="which">
+      <source src="which.ogg" type="audio/ogg">
+       <source src="which.mp3" type="audio/mpeg">
+    </audio>Which <h6>qaysi</h6></td>
+    <td onclick="playAudio('you')"><audio id="you">
+      <source src="you.ogg" type="audio/ogg">
+       <source src="you.mp3" type="audio/mpeg">
+    </audio>you <h6>sen,siz</h6></td>
+    <td onclick="playAudio('either')"><audio id="either">
+      <source src="either.ogg" type="audio/ogg">
+       <source src="either.mp3" type="audio/mpeg">
+    </audio>either <h6>har ikkisi</h6></td>
+    <td onclick="playAudio('it')"><audio id="it">
+      <source src="it.ogg" type="audio/ogg">
+       <source src="it.mp3" type="audio/mpeg">
+    </audio>it <h6>u</h6></td>
+  </tr>
+  <tr>
+    <td onclick="playAudio('he')"><audio id="he">
+      <source src="he.ogg" type="audio/ogg">
+       <source src="he.mp3" type="audio/mpeg">
+    </audio> He <h6>U (o'g'il bola uchun)</h6></td>
+    <td onclick="playAudio('him')"><audio id="him">
+      <source src="him.ogg" type="audio/ogg">
+       <source src="him.mp3" type="audio/mpeg">
+    </audio>Him <h6>uni/unga</h6></td>
+    <td onclick="playAudio('his')"><audio id="his">
+      <source src="his.ogg" type="audio/ogg">
+       <source src="his.mp3" type="audio/mpeg">
+    </audio>His <h6>uning</h6></td>
+    <td onclick="playAudio('his')"><audio id="his">
+      <source src="his.ogg" type="audio/ogg">
+       <source src="his.mp3" type="audio/mpeg">
+    </audio>His <h6>uniki</h6></td>
+    <td onclick="playAudio('himself')"><audio id="himself">
+      <source src="himself.ogg" type="audio/ogg">
+       <source src="himself.mp3" type="audio/mpeg">
+    </audio>Himself <h6>o'zi</h6></td>
+    <td onclick="playAudio('these')"><audio id="these">
+      <source src="these.ogg" type="audio/ogg">
+       <source src="these.mp3" type="audio/mpeg">
+    </audio>These (plural) <h6>bular/shular</h6></td>
+    <td></td>
+    <td onclick="playAudio('whose')"><audio id="whose">
+      <source src="whose.ogg" type="audio/ogg">
+       <source src="whose.mp3" type="audio/mpeg">
+    </audio>whose <h6>kimning</h6></td>
+    <td onclick="playAudio('someone')"><audio id="someone">
+      <source src="someone.ogg" type="audio/ogg">
+       <source src="someone.mp3" type="audio/mpeg">
+    </audio>someone <h6>allakim, kimdir, biror kishi</h6></td>
+    <td onclick="playAudio('whose')"><audio id="whose">
+      <source src="whose.ogg" type="audio/ogg">
+       <source src="whose.mp3" type="audio/mpeg">
+    </audio>whose <h6>kimning</h6></td>
+    <td onclick="playAudio('they')"><audio id="they">
+      <source src="they.ogg" type="audio/ogg">
+       <source src="they.mp3" type="audio/mpeg">
+    </audio>they <h6>ular</h6></td>
+    <td onclick="playAudio('neither')"><audio id="neither">
+      <source src="neither.ogg" type="audio/ogg">
+       <source src="neither.mp3" type="audio/mpeg">
+    </audio>neither <h6>har ikkala,na unisi - na bunisi</h6></td>
+    <td></td>
+  </tr>
+  <tr>
+    <td onclick="playAudio('she')"><audio id="she">
+      <source src="she.ogg" type="audio/ogg">
+       <source src="she.mp3" type="audio/mpeg">
+    </audio>She <h6>U (qiz bola uchun)</h6></td>
+    <td onclick="playAudio('her')"><audio id="her">
+      <source src="her.ogg" type="audio/ogg">
+       <source src="her.mp3" type="audio/mpeg">
+    </audio>her <h6>uni/unga</h6></td>
+    <td onclick="playAudio('her')"><audio id="her">
+      <source src="her.ogg" type="audio/ogg">
+       <source src="her.mp3" type="audio/mpeg">
+    </audio>her <h6>uning</h6></td>
+    <td onclick="playAudio('hers')"><audio id="hers">
+      <source src="hers.ogg" type="audio/ogg">
+       <source src="hers.mp3" type="audio/mpeg">
+    </audio>hers <h6>uniki</h6></td>
+    <td onclick="playAudio('herself')"><audio id="herself">
+      <source src="herself.ogg" type="audio/ogg">
+       <source src="herself.mp3" type="audio/mpeg">
+    </audio>herself <h6>o'zi</h6></td>
+    <td onclick="playAudio('those')"><audio id="those">
+      <source src="those.ogg" type="audio/ogg">
+       <source src="those.mp3" type="audio/mpeg">
+    </audio>Those (plural) <h6>ular/o'sha</h6></td>
+    <td></td>
+    <td onclick="playAudio('what')"><audio id="what">
+      <source src="what.ogg" type="audio/ogg">
+       <source src="what.mp3" type="audio/mpeg">
+    </audio>what <h6>nima, qanday,qancha</h6></td>
+    <td onclick="playAudio('anyone')"><audio id="anyone">
+      <source src="anyone.ogg" type="audio/ogg">
+       <source src="anyone.mp3" type="audio/mpeg">
+    </audio>anyone <h6>biror kishi, hech kim</h6></td>
+    <td onclick="playAudio('whom')"><audio id="whom">
+      <source src="whom.ogg" type="audio/ogg">
+       <source src="whom.mp3" type="audio/mpeg">
+    </audio>whom <h6>kimni</h6></td>
+    <td onclick="playAudio('it')"><audio id="it">
+      <source src="it.ogg" type="audio/ogg">
+       <source src="it.mp3" type="audio/mpeg">
+    </audio>it <h6>u</h6></td>
+    <td></td>
+    <td></td>
+  </tr>
+  <tr>
+    <td onclick="playAudio('it')"><audio id="it">
+      <source src="it.ogg" type="audio/ogg">
+       <source src="it.mp3" type="audio/mpeg">
+    </audio>It <h6>U (narsalar u)</h6></td>
+    <td onclick="playAudio('it')"><audio id="it">
+      <source src="it.ogg" type="audio/ogg">
+       <source src="it.mp3" type="audio/mpeg">
+    </audio>It<h6>uni/unga</h6></td>
+    <td onclick="playAudio('its')"><audio id="its">
+      <source src="its.ogg" type="audio/ogg">
+       <source src="its.mp3" type="audio/mpeg">
+    </audio>Its <h6>Uning</h6></td>
+    <td>not used <h6>(mavjud emas)</h6></td>
+    <td onclick="playAudio('itself')"><audio id="itself">
+      <source src="itself.ogg" type="audio/ogg">
+       <source src="itself.mp3" type="audio/mpeg">
+    </audio>itself <h6>o'zi</h6></td>
+    <td onclick="playAudio('such')"><audio id="such">
+      <source src="such.ogg" type="audio/ogg">
+       <source src="such.mp3" type="audio/mpeg">
+    </audio>Such <h6>shunday, shu, bu,o'zi</h6></td>
+    <td></td>
+    <td onclick="playAudio('which')"><audio id="which">
+      <source src="which.ogg" type="audio/ogg">
+       <source src="which.mp3" type="audio/mpeg">
+    </audio>which <h6>qaysi</h6></td>
+    <td onclick="playAudio('somebody')"><audio id="somebody">
+      <source src="somebody.ogg" type="audio/ogg">
+       <source src="somebody.mp3" type="audio/mpeg">
+    </audio>somebody <h6>allakim, kimdir, biror kishi</h6></td>
+    <td onclick="playAudio('that')"><audio id="that">
+      <source src="that.ogg" type="audio/ogg">
+       <source src="that.mp3" type="audio/mpeg">
+    </audio>That <h6>Bu</h6></td>
+    <td></td>
+    <td></td>
+    <td></td>
+  </tr>
+  <tr>
+    <td onclick="playAudio('we')"><audio id="we">
+      <source src="we.ogg" type="audio/ogg">
+       <source src="we.mp3" type="audio/mpeg">
+    </audio>We <h6>Biz</h6></td>
+    <td onclick="playAudio('us')"><audio id="us">
+      <source src="us.ogg" type="audio/ogg">
+       <source src="us.mp3" type="audio/mpeg">
+    </audio>Us <h6>Bizni/Bizga</h6></td>
+    <td onclick="playAudio('our')"><audio id="our">
+      <source src="our.ogg" type="audio/ogg">
+       <source src="our.mp3" type="audio/mpeg">
+    </audio>Our <h6>Bizning</h6></td>
+    <td  onclick="playAudio('ours')"><audio id="ours">
+      <source src="ours.ogg" type="audio/ogg">
+       <source src="ours.mp3" type="audio/mpeg">
+    </audio>Ours <h6>Bizniki</h6></td>
+    <td onclick="playAudio('ourselves')"><audio id="ourselves">
+      <source src="ourselves.ogg" type="audio/ogg">
+       <source src="ourselves.mp3" type="audio/mpeg">
+    </audio>ourselves <h6>o'zimiz</h6></td>
+    <td  onclick="playAudio('it')"><audio id="it">
+      <source src="it.ogg" type="audio/ogg">
+       <source src="it.mp3" type="audio/mpeg">
+    </audio>It <h6> U, Bu (ma'nosida)</h6></td>
+    <td></td>
+    <td  onclick="playAudio('whoever')"><audio id="whoever">
+      <source src="whoever.ogg" type="audio/ogg">
+       <source src="whoever.mp3" type="audio/mpeg">
+    </audio>whoever <h6>kim bo'lsa ham</h6></td>
+    <td  onclick="playAudio('anybody')"><audio id="anybody">
+      <source src="anybody.ogg" type="audio/ogg">
+       <source src="anybody.mp3" type="audio/mpeg">
+    </audio>anybody <h6>biror kishi, hech kim</h6></td>
+    <td  onclick="playAudio('what')"><audio id="what">
+      <source src="what.ogg" type="audio/ogg">
+       <source src="what.mp3" type="audio/mpeg">
+    </audio>what <h6>nima</h6></td>
+    <td></td>
+    <td></td>
+    <td></td>
+  </tr>
+  <tr>
+    <td  onclick="playAudio('you')"><audio id="you">
+      <source src="you.ogg" type="audio/ogg">
+       <source src="you.mp3" type="audio/mpeg">
+    </audio>you <h6>sizlar</h6></td>
+    <td  onclick="playAudio('you')"><audio id="you">
+      <source src="you.ogg" type="audio/ogg">
+       <source src="you.mp3" type="audio/mpeg">
+    </audio>you<h6>sizlarni/sizlarga</h6></td>
+    <td  onclick="playAudio('your')"><audio id="your">
+      <source src="your.ogg" type="audio/ogg">
+       <source src="your.mp3" type="audio/mpeg">
+    </audio>your <h6>sizlarning</h6></td>
+    <td  onclick="playAudio('yours')"><audio id="yours">
+      <source src="yours.ogg" type="audio/ogg">
+       <source src="yours.mp3" type="audio/mpeg">
+    </audio>yours <h6>sizlarniki</h6></td>
+    <td  onclick="playAudio('yourselves')"><audio id="yourselves">
+      <source src="yourselves.ogg" type="audio/ogg">
+       <source src="yourselves.mp3" type="audio/mpeg">
+    </audio>yourselves <h6>o'zlaringiz</h6></td>
+    <td></td>
+    <td></td>
+    <td  onclick="playAudio('whichever')"><audio id="whichever">
+      <source src="whichever.ogg" type="audio/ogg">
+       <source src="whichever.mp3" type="audio/mpeg">
+    </audio>whichever <h6>qanday</h6></td>
+    <td onclick="playAudio('something')"><audio id="something">
+      <source src="something.ogg" type="audio/ogg">
+       <source src="something.mp3" type="audio/mpeg">
+    </audio>something <h6>allanarsa, biror narsa</h6></td>
+    <td onclick="playAudio('whichever')"><audio id="whichever">
+      <source src="whichever.ogg" type="audio/ogg">
+       <source src="whichever.mp3" type="audio/mpeg">
+    </audio>whichever<h6> qanday</h6></td>
+    <td></td>
+    <td></td>
+    <td></td>
+  </tr>
+ 
+  <tr>
+    <td onclick="playAudio('they')"><audio id="they">
+      <source src="they.ogg" type="audio/ogg">
+       <source src="they.mp3" type="audio/mpeg">
+    </audio>They <h6>Ular</h6></td>
+    <td onclick="playAudio('them')"><audio id="them">
+      <source src="them.ogg" type="audio/ogg">
+       <source src="them.mp3" type="audio/mpeg">
+    </audio>Them <h6>Ularni/Ularga</h6></td>
+    <td onclick="playAudio('their')"><audio id="their">
+      <source src="their.ogg" type="audio/ogg">
+       <source src="their.mp3" type="audio/mpeg">
+    </audio>Their <h6>Ularning</h6></td>
+    <td onclick="playAudio('theirs')"><audio id="theirs">
+      <source src="theirs.ogg" type="audio/ogg">
+       <source src="theirs.mp3" type="audio/mpeg">
+    </audio>Theirs <h6>Ularniki</h6></td>
+    <td onclick="playAudio('themselves')"><audio id="themselves">
+      <source src="themselves.ogg" type="audio/ogg">
+       <source src="themselves.mp3" type="audio/mpeg">
+    </audio>Themselves <h6>o'zlari</h6></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td onclick="playAudio('anything')"><audio id="anything">
+      <source src="anything.ogg" type="audio/ogg">
+       <source src="anything.mp3" type="audio/mpeg">
+    </audio>anything <h6>biror narsa, hech narsa</h6></td>
+    <td onclick="playAudio('when')"><audio id="when">
+      <source src="when.ogg" type="audio/ogg">
+       <source src="when.mp3" type="audio/mpeg">
+    </audio>when <h6>qachon</h6></td>
+    <td></td>
+    <td></td>
+    <td></td>
+  </tr>
+  <tr>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td onclick="playAudio('no')"><audio id="no">
+      <source src="no.ogg" type="audio/ogg">
+       <source src="no.mp3" type="audio/mpeg">
+    </audio>no <h6>birorta ham, hech qanday</h6></td>
+    <td onclick="playAudio('where')"><audio id="where">
+      <source src="where.ogg" type="audio/ogg">
+       <source src="where.mp3" type="audio/mpeg">
+    </audio>where <h6>qayerda</h6></td>
+    <td></td>
+    <td></td>
+    <td></td>
+  </tr>
+  <tr>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>    
+    <td onclick="playAudio('none')"><audio id="none">
+      <source src="none.ogg" type="audio/ogg">
+       <source src="none.mp3" type="audio/mpeg">
+    </audio>none <h6>hech ham,hech qachon</h6></td>
+    <td onclick="playAudio('whoever')"><audio id="whoever">
+      <source src="whoever.ogg" type="audio/ogg">
+       <source src="whoever.mp3" type="audio/mpeg">
+    </audio>whoever <h6>kim bo'lsa ham</h6></td>
+    <td></td>
+    <td></td>
+    <td></td>
+  </tr>
+  <tr>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>    
+    <td onclick="playAudio('no one')"><audio id="no one">
+      <source src="no one.ogg" type="audio/ogg">
+       <source src="no one.mp3" type="audio/mpeg">
+    </audio>no one <h6>hech kim</h6></td>
+    <td onclick="playAudio('whosoever')"><audio id="whosoever">
+      <source src="whosoever.ogg" type="audio/ogg">
+       <source src="whosoever.mp3" type="audio/mpeg">
+    </audio>whosoever <H6>kim bo'lsa ham</H6></td>
+    <td></td>
+    <td></td>
+    <td></td>
+  </tr>
+  <tr>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>    
+    <td onclick="playAudio('nobody')"><audio id="nobody">
+      <source src="nobody.ogg" type="audio/ogg">
+       <source src="nobody.mp3" type="audio/mpeg">
+    </audio>nobody <h6>hech kim</h6></td>
+    <td onclick="playAudio('whomever')"><audio id="whomever">
+      <source src="whomever.ogg" type="audio/ogg">
+       <source src="whomever.mp3" type="audio/mpeg">
+    </audio>whomever <h6>kim bo'lsa ham</h6></td>
+    <td></td>
+    <td></td>
+    <td></td>
+  </tr>
+  <tr>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>    
+    <td onclick="playAudio('nothing')"><audio id="nothing">
+      <source src="nothing.ogg" type="audio/ogg">
+       <source src="nothing.mp3" type="audio/mpeg">
+    </audio>nothing <h6>hech narsa</h6></td>
+    <td onclick="playAudio('wherever')"><audio id="wherever">
+      <source src="wherever.ogg" type="audio/ogg">
+       <source src="wherever.mp3" type="audio/mpeg">
+    </audio>wherever <h6>qayeda bo'lsa ham</h6></td>
+    <td></td>
+    <td></td>
+    <td></td>
+  </tr>
+  <tr>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>    
+    <td onclick="playAudio('much')"><audio id="much">
+      <source src="much.ogg" type="audio/ogg">
+       <source src="much.mp3" type="audio/mpeg">
+    </audio>much <h6>ko'p,ko'pchilik</h6></td>
+    <td onclick="playAudio('whatever')"><audio id="whatever">
+      <source src="whatever.ogg" type="audio/ogg">
+       <source src="whatever.mp3" type="audio/mpeg">
+    </audio>whatever <h6>har qanday</h6></td>
+    <td></td>
+    <td></td>
+    <td></td>
+  </tr>
+  <tr>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>    
+    <td onclick="playAudio('any')"><audio id="any">
+      <source src="any.ogg" type="audio/ogg">
+       <source src="any.mp3" type="audio/mpeg">
+    </audio>any <h6>Ko'p,ko'pchilik</h6></td>
+    <td onclick="playAudio('whatsoever')"><audio id="whatsoever">
+      <source src="whatsoever.ogg" type="audio/ogg">
+       <source src="whatsoever.mp3" type="audio/mpeg">
+    </audio>whatsoever <h6>nima bo'lsa ham</h6></td>
+    <td></td>
+    <td></td>
+    <td></td>
+  </tr>
+  <tr>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>    
+    <td onclick="playAudio('little')"><audio id="little">
+      <source src="little.ogg" type="audio/ogg">
+       <source src="little.mp3" type="audio/mpeg">
+    </audio>little <h6>oz, ozginasi,kam </h6></td>
+    <td onclick="playAudio('why')"><audio id="why">
+      <source src="why.ogg" type="audio/ogg">
+       <source src="why.mp3" type="audio/mpeg">
+    </audio>why<h6>nega,nima uchun </h6></td>
+    <td></td>
+    <td></td>
+    <td></td>
+  </tr>
+  <tr>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>    
+    <td onclick="playAudio('few')"><audio id="few">
+      <source src="few.ogg" type="audio/ogg">
+       <source src="few.mp3" type="audio/mpeg">
+    </audio>few <h6>oz,bir nechta,kam </h6></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+  </tr>
+  <tr>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>    
+    <td onclick="playAudio('a little')"><audio id="a little">
+      <source src="a little.ogg" type="audio/ogg">
+       <source src="a little.mp3" type="audio/mpeg">
+    </audio>a little <h6>ozroq</h6></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+  </tr>
+  <tr>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>    
+    <td onclick="playAudio('a few')"><audio id="a few">
+      <source src="a few.ogg" type="audio/ogg">
+       <source src="a few.mp3" type="audio/mpeg">
+    </audio>a few <h6>ozroq</h6></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+  </tr>
+  <tr>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>    
+    <td onclick="playAudio('all')"><audio id="all">
+      <source src="all.ogg" type="audio/ogg">
+       <source src="all.mp3" type="audio/mpeg">
+    </audio>all <h6>hamma,barcha</h6></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+  </tr>
+  <tr>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>    
+    <td onclick="playAudio('everyone')"><audio id="everyone">
+      <source src="everyone.ogg" type="audio/ogg">
+       <source src="everyone.mp3" type="audio/mpeg">
+    </audio>everyone <h6>hamma </h6></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+  </tr>
+  <tr>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>    
+    <td onclick="playAudio('everybody')"><audio id="everybody">
+      <source src="everybody.ogg" type="audio/ogg">
+       <source src="everybody.mp3" type="audio/mpeg">
+    </audio>everybody <h6>hamma</h6></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+  </tr>
+  <tr>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>    
+    <td onclick="playAudio('everything')"><audio id="everything">
+      <source src="everything.ogg" type="audio/ogg">
+       <source src="everything.mp3" type="audio/mpeg">
+    </audio>everything <h6>hamma narsa</h6></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+  </tr>
+  <tr>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>    
+    <td onclick="playAudio('both')"><audio id="both">
+      <source src="both.ogg" type="audio/ogg">
+       <source src="both.mp3" type="audio/mpeg">
+    </audio>Both <h6>har ikkala</h6></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+  </tr>
+  <tr>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>    
+    <td onclick="playAudio('neither')"><audio id="neither">
+      <source src="neither.ogg" type="audio/ogg">
+       <source src="neither.mp3" type="audio/mpeg">
+    </audio>neither <h6>har ikkala,na unisi - na bunisi</h6></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+  </tr>
+  <tr>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td> 
+    <td onclick="playAudio('either')"><audio id="either">
+      <source src="either.ogg" type="audio/ogg">
+       <source src="either.mp3" type="audio/mpeg">
+    </audio>either <h6>har ikkisi,<br>ham unisi ham bunisi, <br> ikkalasidan biri</h6></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+  </tr>
+  <tr>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td> 
+    <td onclick="playAudio('each')"><audio id="each">
+      <source src="each.ogg" type="audio/ogg">
+       <source src="each.mp3" type="audio/mpeg">
+    </audio>each <h6>har bir</h6></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+  </tr>
+  <tr>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td> 
+    <td onclick="playAudio('every')"><audio id="every">
+      <source src="every.ogg" type="audio/ogg">
+       <source src="every.mp3" type="audio/mpeg">
+    </audio>every <h6>har bir</h6></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+  </tr>
+  <tr>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td> 
+    <td onclick="playAudio('other')"><audio id="other">
+      <source src="other.ogg" type="audio/ogg">
+       <source src="other.mp3" type="audio/mpeg">
+    </audio>other <h6>boshqa</h6></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+  </tr>
+  <tr>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td> 
+    <td onclick="playAudio('one')"><audio id="one">
+      <source src="one.ogg" type="audio/ogg">
+       <source src="one.mp3" type="audio/mpeg">
+    </audio>one <h6>Bitta</h6> <h6></h6></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+  </tr>
+  <tr>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td> 
+    <td onclick="playAudio('another')"><audio id="another">
+      <source src="another.ogg" type="audio/ogg">
+       <source src="another.mp3" type="audio/mpeg">
+    </audio>another <h6>boshqa</h6></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+  </tr>
+  <tr>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td> 
+    <td onclick="playAudio('less')"><audio id="less">
+      <source src="less.ogg" type="audio/ogg">
+       <source src="less.mp3" type="audio/mpeg">
+    </audio>less<h6>kam,ozgina</h6></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+  </tr>
+  <tr>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td> 
+    <td onclick="playAudio('several')"><audio id="several">
+      <source src="several.ogg" type="audio/ogg">
+       <source src="several.mp3" type="audio/mpeg">
+    </audio>several<h6>bir nechta </h6></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+  </tr>
+  <tr>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td> 
+    <td onclick="playAudio('most')"><audio id="most">
+      <source src="most.ogg" type="audio/ogg">
+       <source src="most.mp3" type="audio/mpeg">
+    </audio>most <h6>eng ko'p</h6></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+  </tr>
+  <tr>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td> 
+    <td onclick="playAudio('more')"><audio id="more">
+      <source src="more.ogg" type="audio/ogg">
+       <source src="more.mp3" type="audio/mpeg">
+    </audio>more <h6>ko'proq</h6></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+  </tr>
+  <tr>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td> 
+    <td onclick="playAudio('fewer')"><audio id="fewer">
+      <source src="fewer.ogg" type="audio/ogg">
+       <source src="fewer.mp3" type="audio/mpeg">
+    </audio>fewer<h6>kamroq,ozroq</h6></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+  </tr>
+  <tr>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td> 
+    <td onclick="playAudio('plenty')"><audio id="plenty">
+      <source src="plenty.ogg" type="audio/ogg">
+       <source src="plenty.mp3" type="audio/mpeg">
+    </audio>plenty<h6>mo'l-ko'lchilik</h6></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+  </tr>
+  <tr>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td> 
+    <td onclick="playAudio('whosoever')"><audio id="whosoever">
+      <source src="whosoever.ogg" type="audio/ogg">
+       <source src="whosoever.mp3" type="audio/mpeg">
+    </audio>whosoever<h6>kim bo'lmasin</h6></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+  </tr>
+  <tr>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td> 
+    <td onclick="playAudio('whoever')"><audio id="whoever">
+      <source src="whoever.ogg" type="audio/ogg">
+       <source src="whoever.mp3" type="audio/mpeg">
+    </audio>whoever<h6>kim bo'lmasin</h6></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+  </tr>
+  <tr>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td> 
+    <td onclick="playAudio('whomever')"><audio id="whomever">
+      <source src="whomever.ogg" type="audio/ogg">
+       <source src="whomever.mp3" type="audio/mpeg">
+    </audio>whomever<h6>kim bo'lsa ham</h6></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+  </tr>
+  <tr>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td> 
+    <td onclick="playAudio('whomsoever')"><audio id="whomsoever">
+      <source src="whomsoever.ogg" type="audio/ogg">
+       <source src="whomsoever.mp3" type="audio/mpeg">
+    </audio> whomsoever<h6>kim bo'lsa ham</h6></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <tr>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td> 
+      <td onclick="playAudio('they')"><audio id="they">
+        <source src="they.ogg" type="audio/ogg">
+         <source src="they.mp3" type="audio/mpeg">
+      </audio>they <h6>ular</h6></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td> 
+      <td onclick="playAudio('you')"><audio id="you">
+        <source src="you.ogg" type="audio/ogg">
+         <source src="you.mp3" type="audio/mpeg">
+      </audio>you <h6>sen.siz</h6></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td> 
+      <td onclick="playAudio('enough')"><audio id="enough">
+        <source src="enough.ogg" type="audio/ogg">
+         <source src="enough.mp3" type="audio/mpeg">
+      </audio>enough <h6>yetarli</h6></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td> 
+      <td onclick="playAudio('such')"><audio id="such">
+        <source src="such.ogg" type="audio/ogg">
+         <source src="such.mp3" type="audio/mpeg">
+      </audio>such<h6>shunday</h6></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td> 
+      <td onclick="playAudio('whatever')"><audio id="whatever">
+        <source src="whatever.ogg" type="audio/ogg">
+         <source src="whatever.mp3" type="audio/mpeg">
+      </audio>whatever<h6>har qanday</h6></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td> 
+      <td onclick="playAudio('whichever')"><audio id="whichever">
+        <source src="whichever.ogg" type="audio/ogg">
+         <source src="whichever.mp3" type="audio/mpeg">
+      </audio>whichever<h6> qanday</h6></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+  </tr>
+</table>
+<script>
+function playAudio(y) {
+  var x = document.getElementById(y);
+  x.play(); } 
+ </script>
+</body>
+</html>
